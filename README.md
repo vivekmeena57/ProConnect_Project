@@ -80,7 +80,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-Live:https://proconnect-frontend-ochre.vercel.app
+Live: https://proconnect-frontend-ochre.vercel.app
 
 ---
 
