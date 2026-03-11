@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 import { io } from "socket.io-client";
 export let socket = io("https://proconnect-backend-thkn.onrender.com");
 
-export const userDataContex = createContext();
+export const userDataContext = createContext();
 
-function UserContex({ children }) {
+function UserContext({ children }) {
   let [userData, setUserData] = useState(null);
   let { serverUrl } = useContext(authDataContext);
   let [edit, setEdit] = useState(false);
@@ -79,4 +79,4 @@ function UserContex({ children }) {
   );
 }
 
-export default UserContex;
+export default UserContext;
