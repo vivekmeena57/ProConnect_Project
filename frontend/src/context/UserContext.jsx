@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 import { io } from "socket.io-client";
-export let socket = io("http://localhost:3000");
+export let socket = io("https://proconnect-backend-thkn.onrender.com");
 
 export const userDataContext = createContext();
 
