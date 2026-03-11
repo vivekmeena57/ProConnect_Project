@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 import { io } from "socket.io-client";
-export let socket = io("https://proconnect-backend-thkn.onrender.com");
+export let socket = io("http://localhost:3000");
 
 export const userDataContext = createContext();
 
@@ -72,9 +72,9 @@ function UserContext({ children }) {
   };
   return (
     <div>
-      <userDataContex.Provider value={value}>
+      <userDataContext.Provider value={value}>
         {children}
-      </userDataContex.Provider>
+      </userDataContext.Provider>
     </div>
   );
 }

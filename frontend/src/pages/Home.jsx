@@ -4,7 +4,7 @@ import dp from "../assets/profilelogo.jpg";
 import axios from "axios";
 import { FaPlus } from "react-icons/fa6";
 import { IoCameraOutline } from "react-icons/io5";
-import { userDataContext } from "../context/userContext.jsx";
+import { userDataContext } from "../context/UserContext.jsx";
 import { HiPencil } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { LuImagePlus } from "react-icons/lu";
