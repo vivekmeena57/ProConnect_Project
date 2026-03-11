@@ -14,7 +14,7 @@ import { authDataContext } from "../context/AuthContext.jsx";
 import Post from "../components/Post.jsx";
 
 function Home() {
-  let { userData, setUserData, edit, setEdit,postData,getPost,setPostData,handleGetProfile } = useContext(userDataContex);
+  let { userData, setUserData, edit, setEdit,postData,getPost,setPostData,handleGetProfile } = useContext(userDataContext);
   let { serverUrl } = useContext(authDataContext);
   let [frontendImage,setFrontendImage] = useState("")
   let [backendImage,setBackendImage] = useState("")
