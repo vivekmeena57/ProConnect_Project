@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import SignUp from "./pages/signUp";
+import SignUp from "./pages/SignUp";
 import { userDataContex } from "./context/userContex";
 import Network from "./pages/Network";
 import Profile from "./pages/Profile";
