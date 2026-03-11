@@ -18,10 +18,7 @@ let server = http.createServer(app);
 
 export const io = new Server(server, {
   cors: {
-   origin: [
-    "http://localhost:5173",
-    "https://proconnect-frontend-ochre.vercel.app"
-  ],
+   origin:"https://proconnect-frontend-ochre.vercel.app",
     credentials: true,
   },
 });
@@ -30,10 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-  origin: [
-    "http://localhost:5173",
-    "https://proconnect-frontend-ochre.vercel.app"
-  ],
+ origin:"https://proconnect-frontend-ochre.vercel.app",
     credentials: true,
   }),
 );
