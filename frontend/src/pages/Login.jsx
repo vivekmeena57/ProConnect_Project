@@ -47,7 +47,7 @@ function Login() {
         <img src={ProConnectLogo2} alt="" className="h-16 w-32" />
       </div>
 
-      <div className=" bg-[#f3f2ef] flex items-center justify-center px-4  mt-20 md:mt-10">
+      <div className=" bg-[#f3f2ef] flex items-center justify-center px-4  mt-15 md:mt-10">
         <div className="bg-white w-full max-w-md p-10 rounded-lg shadow-md">
           <h1 className="text-2xl font-semibold text-dark-900 text-center mb-6">
             Sign in
@@ -69,7 +69,7 @@ function Login() {
               <input
                 type={show ? "text" : "password"}
                 name="password"
-                placeholder="Password (8+ characters)"
+                placeholder="Password "
                 required
                 // minLength={6}
                 className="w-full mb-5 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
