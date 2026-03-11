@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
   import io from 'socket.io-client'
   import { userDataContex } from "../context/userContex";
   import { authDataContext } from "../context/AuthContext";
-  const socket = io("http://localhost:3000")
+  const socket = io("https://proconnect-backend-thkn.onrender.com")
   import { Navigate, useNavigate } from "react-router-dom";
  
  
