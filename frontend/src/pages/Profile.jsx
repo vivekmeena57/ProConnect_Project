@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Nav from "../components/Nav";
 import dp from "../assets/profilelogo.jpg";
-import { userDataContex } from "../context/userContex";
+import { userDataContext } from "../context/UserContext.jsx";
 import { IoCameraOutline } from "react-icons/io5";
 import { HiPencil } from "react-icons/hi2";
 import { authDataContext } from "../context/AuthContext.jsx";
@@ -20,7 +20,7 @@ function Profile() {
     setPostData,
     profileData,
     setProfileData,
-  } = useContext(userDataContex);
+  } = useContext(userDataContext);
   let { serverUrl } = useContext(authDataContext);
   let [profilePost, setProfilePost] = useState([]);
 

@@ -6,7 +6,7 @@ import { BiSolidLike } from "react-icons/bi";
 import { FaCommentDots } from "react-icons/fa6";
 import axios from "axios";
 import { authDataContext } from "../context/AuthContext.jsx";
-import { socket, userDataContex } from "../context/userContex.jsx";
+import { socket, userDataContext } from "../context/UserContext.jsx";
 import { TbSend2 } from "react-icons/tb";
 import ConnectionButton from "./ConnectionButton.jsx";
 import { CiCircleRemove } from "react-icons/ci";
@@ -24,7 +24,7 @@ function Post({ id, author, like, comment, description, image, createdAt }) {
     handleGetProfile,
     postData,
     setPostData,
-  } = useContext(userDataContex);
+  } = useContext(userDataContext);
   let [commentContent, setCommentContent] = useState("");
   let [comments, setComments] = useState([]);
   let [showcomment, setshowcomment] = useState(false);

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 
   import axios from "axios";
   import io from 'socket.io-client'
-  import { userDataContex } from "../context/userContex";
+  import { userDataContext } from "../context/UserContext.jsx";
   import { authDataContext } from "../context/AuthContext";
   const socket = io("https://proconnect-backend-thkn.onrender.com")
   import { Navigate, useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ import React, { useContext, useEffect, useState } from "react";
 function ConnectionButton({userId}) {
     
   let { serverUrl } = useContext(authDataContext);
-  let {userData, setUserData} = useContext(userDataContex)
+  let {userData, setUserData} = useContext(userDataContext)
   let [status,setStatus] = useState("")
   let navigate = useNavigate()
 

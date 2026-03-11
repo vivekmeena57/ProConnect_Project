@@ -1,5 +1,5 @@
 import { RxCross2 } from "react-icons/rx";
-import { userDataContex } from "../context/userContex.jsx";
+import { userDataContext } from "../context/UserContext.jsx";
 import { useContext } from "react";
 import dp from "../assets/profilelogo.jpg";
 import { FaPlus } from "react-icons/fa6";
@@ -12,7 +12,7 @@ import { authDataContext } from "../context/AuthContext.jsx";
 function EditProfile() {
   let { serverUrl } = useContext(authDataContext);
   let { userData, setUserData, edit, setEdit, getPost } =
-    useContext(userDataContex);
+    useContext(userDataContext);
   let [firstName, setFirstName] = useState(userData.firstName || "");
   let [lastName, setLastName] = useState(userData.lastName || "");
   let [userName, setUserName] = useState(userData.userName || "");

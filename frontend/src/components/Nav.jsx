@@ -6,7 +6,7 @@ import { IoMdSearch } from "react-icons/io";
 import { IoHome, IoNavigate } from "react-icons/io5";
 import { BsPeopleFill } from "react-icons/bs";
 import { IoNotifications } from "react-icons/io5";
-import { userDataContex } from "../context/userContex.jsx";
+import { userDataContext } from "../context/UserContext.jsx";
 import { authDataContext } from "../context/AuthContext.jsx";
 import { Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -15,7 +15,7 @@ import { useEffect } from "react";
 function Nav() {
   let [activeSearch, setActiveSearch] = useState(false);
   let [showPop, setShowPop] = useState(false);
-  let { userData, setUserData,handleGetProfile } = useContext(userDataContex);
+  let { userData, setUserData,handleGetProfile } = useContext(userDataContext);
   let { serverUrl } = useContext(authDataContext);
   let [searchInput , setSearchInput] = useState("")
   let [searchedData,setSearchedData] = useState([])

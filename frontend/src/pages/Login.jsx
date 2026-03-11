@@ -2,14 +2,14 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { authDataContext } from "../context/AuthContext";
 import axios from "axios";
-import { userDataContex } from "../context/userContex";
+import { userDataContext } from "../context/UserContext.jsx";
 import ProConnectLogo2 from "../assets/ProConnectLogo2.png";
 
 function Login() {
   let [show, setShow] = useState(false);
   let navigate = useNavigate();
   let { serverUrl } = useContext(authDataContext);
-  let { userData, setUserData } = useContext(userDataContex);
+  let { userData, setUserData } = useContext(userDataContext);
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let [loading, setLoading] = useState(false);
