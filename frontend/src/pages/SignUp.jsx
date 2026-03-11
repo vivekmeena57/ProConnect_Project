@@ -57,7 +57,7 @@ function SignUp() {
         <img src={ProConnectLogo2} alt="" className="h-16 w-32" />
       </div>
 
-      <div className=" bg-[#f3f2ef] flex items-center justify-center px-4 mt-10 md:mt-0 ">
+      <div className=" bg-[#f3f2ef] flex items-center justify-center px-4 mt-8 mb-5 md:mt-0 ">
         <div className="bg-white w-full max-w-md p-10 rounded-lg shadow-md">
           <h1 className="text-2xl font-semibold text-dark-900 text-center mb-6">
             Sign Up
@@ -114,7 +114,7 @@ function SignUp() {
               <input
                 type={show ? "text" : "password"}
                 name="password"
-                placeholder="Password (8+ characters)"
+                placeholder="Password "
                 required
                 // minLength={6}
                 className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
